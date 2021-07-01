@@ -1,0 +1,3 @@
+displayName = Luck Info
+author = Exterminator
+version = 0.1
