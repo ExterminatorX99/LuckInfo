@@ -1,2 +1,5 @@
 # LuckInfo
-Terraria mod that adds an accessory which displays your luck stat
+Adds an accessory which displays your luck stat
+
+Temporary recipe:
+  - 10 Dirt
