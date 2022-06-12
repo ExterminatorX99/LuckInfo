@@ -2,7 +2,7 @@
 
 namespace LuckInfo
 {
-    internal class LuckPlayer : ModPlayer
+    public class LuckPlayer : ModPlayer
     {
         public bool accLuck;
 
