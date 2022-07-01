@@ -1,1 +1,5 @@
-Luck Info is a pretty cool mod, it does...this. Modify this file with a description of your mod.
+This mod add an accessory that allows you to see your luck stat.
+
+The accessory is crafted with 10 dirt at a workbench. (temporary recipe)
+
+There is also a config option for how accurate you want the display to be.
