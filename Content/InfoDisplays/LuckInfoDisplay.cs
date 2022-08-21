@@ -5,7 +5,12 @@ using Common.Players;
 
 public sealed class LuckInfoDisplay : InfoDisplay
 {
+    private static readonly char[] TrimKey = { '{', '}', '$' };
+
     public static string Format => "F" + LuckConfig.Instance.Decimals;
+
+    // Needed because 'LocalizationLoader.RefreshModLanguage' doesn't handle keys in 'InfoDisplayName'
+    protected override string DisplayNameInternal => Language.GetTextValue(base.DisplayNameInternal.Trim(TrimKey));
 
     public override string DisplayValue()
     {
