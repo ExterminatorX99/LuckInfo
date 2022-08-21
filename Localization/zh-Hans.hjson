@@ -1,0 +1,22 @@
+Mods.LuckInfo: {
+    Config: {
+        Label: Luck Info Config
+
+        Decimals: {
+            Label: Accuracy
+            Tooltip: Number of decimal places to display
+        }
+    }
+
+    InfoDisplayName: {
+        LuckInfoDisplay: "{$RandomWorldName_Noun.Luck}"
+    }
+
+    ItemName: {
+        LuckInfoAccessory: Luck Info Accessory
+    }
+
+    ItemTooltip: {
+        LuckInfoAccessory: Divines your luck
+    }
+}

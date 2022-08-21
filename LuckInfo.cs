@@ -1,8 +1,5 @@
-using Terraria.ModLoader;
+﻿namespace LuckInfo;
 
-namespace LuckInfo
+public sealed class LuckInfo : Mod
 {
-	public class LuckInfo : Mod
-	{
-	}
 }
