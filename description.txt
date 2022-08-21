@@ -1,5 +1,9 @@
-This mod add an accessory that allows you to see your luck stat.
+This mod adds an accessory that shows your luck stat.
 
-The accessory is crafted with 10 dirt at a workbench. (temporary recipe)
+Recipe:
+ - 1 Ladybug
+ - 3 Fallen stars
+ - 10 Iron/Lead bars
+ - At any anvil
 
-There is also a config option for how accurate you want the display to be.
+There is a config option for how accurate you want the display to be.

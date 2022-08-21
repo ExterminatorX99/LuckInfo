@@ -16,7 +16,9 @@ public sealed class LuckInfoAccessory : ModItem
 
         Item.accessory = true;
         Item.maxStack = 1;
-        Item.value = Item.buyPrice(gold: 1);
+        Item.rare = ItemRarityID.Blue;
+
+        Item.value = Item.sellPrice(silver: 20);
     }
 
     public override void UpdateAccessory(Player player, bool hideVisual)
@@ -37,8 +39,10 @@ public sealed class LuckInfoAccessory : ModItem
     public override void AddRecipes()
     {
         CreateRecipe()
-            .AddIngredient(ItemID.DirtBlock, 10)
-            .AddTile(TileID.WorkBenches)
+            .AddIngredient(ItemID.LadyBug)
+            .AddIngredient(ItemID.FallenStar, 3)
+            .AddRecipeGroup(RecipeGroupID.IronBar, 10)
+            .AddTile(TileID.Anvils)
             .Register();
     }
 }
