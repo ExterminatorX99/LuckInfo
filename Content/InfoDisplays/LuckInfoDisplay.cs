@@ -1,19 +1,19 @@
-﻿namespace LuckInfo.Content.InfoDisplays;
+﻿using Microsoft.Xna.Framework;
+namespace LuckInfo.Content.InfoDisplays;
 
 using Common.Configs;
 using Common.Players;
 
 public sealed class LuckInfoDisplay : InfoDisplay
 {
-    private static readonly char[] TrimKey = { '{', '}', '$' };
-
     public static string Format => "F" + LuckConfig.Instance.Decimals;
 
-    // Needed because 'LocalizationLoader.RefreshModLanguage' doesn't handle keys in 'InfoDisplayName'
-    protected override string DisplayNameInternal => Language.GetTextValue(base.DisplayNameInternal.Trim(TrimKey));
-
-    public override string DisplayValue()
+    public override string DisplayValue(ref Color displayColor, ref Color displayShadowColor)
     {
+        if (Main.LocalPlayer.luck == 0) {
+            displayColor = InactiveInfoTextColor;
+        }
+
         return Main.LocalPlayer.luck.ToString(Format, Language.ActiveCulture.CultureInfo);
     }
 
